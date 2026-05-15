@@ -75,13 +75,81 @@
 
 ### 🖥️ Infrastructure
 
+<table>
+<tr>
+<td align="center" width="20%">
+
+**🇯🇵 Tokyo VPS**
+<br/>
+<img src="https://img.shields.io/badge/Vultr-007BFC?style=for-the-badge&logo=vultr&logoColor=white" />
+<br/>
+<sub>Docker · Portainer<br/>核心服务枢纽</sub>
+
+</td>
+<td align="center" width="20%">
+
+**🇺🇸 Mail VPS**
+<br/>
+<img src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white" />
+<br/>
+<sub>mail.pophcc.com<br/>自建邮件服务</sub>
+
+</td>
+<td align="center" width="20%">
+
+**🇺🇸 Web VPS**
+<br/>
+<img src="https://img.shields.io/badge/Next.js-000?style=for-the-badge&logo=next.js&logoColor=white" />
+<br/>
+<sub>sjz-tips.com<br/>Nginx + HTTPS</sub>
+
+</td>
+<td align="center" width="20%">
+
+**🇨🇳 Shanghai ECS**
+<br/>
+<img src="https://img.shields.io/badge/Alibaba_Cloud-FF6A00?style=for-the-badge&logo=alibabacloud&logoColor=white" />
+<br/>
+<sub>财务系统<br/>Nginx + PM2</sub>
+
+</td>
+<td align="center" width="20%">
+
+**🏠 Synology NAS**
+<br/>
+<img src="https://img.shields.io/badge/Synology-B6B5B6?style=for-the-badge&logo=synology&logoColor=black" />
+<br/>
+<sub>DS220+<br/>存储 · 备份 · AI</sub>
+
+</td>
+</tr>
+<tr>
+<td align="center" colspan="5">
+
 ```
-  🇯🇵 Tokyo VPS        ──── Docker Hub · Portainer · 核心服务
-  🇺🇸 US Mail VPS      ──── mail.pophcc.com · 邮件引擎
-  🇺🇸 US Web VPS       ──── sjz-tips.com · Next.js 站点
-  🇨🇳 Shanghai ECS     ──── 财务系统 · Nginx + PM2
-  🏠 Synology NAS      ──── 本地存储 · 备份 · AI 终端
+                    ┌─────────────┐
+                    │  Cloudflare  │
+                    │   DNS/CDN    │
+                    └──────┬──────┘
+           ┌───────────────┼───────────────┐
+           ▼               ▼               ▼
+    ┌─────────────┐ ┌─────────────┐ ┌─────────────┐
+    │ 🇯🇵 Tokyo   │ │ 🇺🇸 US×2    │ │ 🇨🇳 Shanghai │
+    │  Portainer  │ │ Mail + Web  │ │  财务系统    │
+    │  Docker Hub │ │ Next.js     │ │  Nginx+PM2  │
+    └──────┬──────┘ └─────────────┘ └─────────────┘
+           │
+           ▼
+    ┌─────────────┐
+    │ 🏠 NAS      │
+    │  DS220+     │
+    │  Backup/AI  │
+    └─────────────┘
 ```
+
+</td>
+</tr>
+</table>
 
 ---
 
